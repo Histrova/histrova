@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and ideas
+    url: https://github.com/Histrova/histrova/discussions
+    about: Ask how to do something, or share an idea.
+  - name: Quick anonymous feedback
+    url: https://histrova.pages.dev/#feedback
+    about: A 3-minute form, no GitHub account needed.

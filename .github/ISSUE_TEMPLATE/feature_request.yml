@@ -1,0 +1,24 @@
+name: Feature request
+description: Something Histrova should do.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check existing requests first: a 👍 on an existing one helps it rise.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The task or problem, in your own words. Why does it matter to you?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How would you like it to work?
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you do it today?
+      description: Another tool, the command line, a workaround…

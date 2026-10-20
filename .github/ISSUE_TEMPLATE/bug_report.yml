@@ -1,0 +1,54 @@
+name: Bug report
+description: Something doesn't work, or works wrongly.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please don't include private code, passwords or tokens. For a security problem, use **Security › Report a vulnerability** instead.
+  - type: dropdown
+    id: where
+    attributes:
+      label: Which editor?
+      options:
+        - VS Code
+        - Cursor
+        - Windsurf
+        - Another editor
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: And what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we make it happen?
+      description: Step by step, as far as you can.
+      placeholder: |
+        1. Right-click a commit
+        2. Choose Edit Message…
+        3. …
+  - type: input
+    id: version
+    attributes:
+      label: Histrova version
+      description: Extensions view › Histrova.
+      placeholder: 0.9.0
+    validations:
+      required: true
+  - type: input
+    id: git
+    attributes:
+      label: Git version and operating system
+      description: Run `git --version`.
+      placeholder: git 2.47.1, macOS 15.3
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or error messages
+      description: A screenshot helps a lot, and the exact text of any error message.
